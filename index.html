@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9fb">
+  <meta name="description" content="李洪鑫的个人社交媒体作品主页。选择抖音或小红书，查看内容作品。">
+  <title>李洪鑫 | 个人社媒作品</title>
+  <style>
+    :root{
+      color-scheme: light;
+      --ink:#202939; --muted:#627084; --line:#e4e8ee;
+      --bg:#f8f9fb; --card:#fff; --accent:#365b83;
+    }
+    *{box-sizing:border-box}
+    html{min-height:100%}
+    body{
+      margin:0; min-height:100vh; min-height:100svh;
+      display:flex; align-items:center; justify-content:center;
+      padding:36px 20px;
+      background:
+        radial-gradient(ellipse at 18% 6%,rgba(184,207,231,.27),transparent 45%),
+        radial-gradient(ellipse at 90% 94%,rgba(228,205,197,.24),transparent 42%),
+        var(--bg);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+      color:var(--ink); -webkit-font-smoothing:antialiased;
+    }
+    main{width:min(100%,520px)}
+    .eyebrow{
+      margin:0 0 18px; font-size:12px; font-weight:700;
+      letter-spacing:.18em; color:var(--accent); text-transform:uppercase;
+    }
+    h1{
+      font-size:clamp(32px,7vw,45px); line-height:1.2; letter-spacing:-.045em;
+      margin:0 0 14px; font-weight:740;
+    }
+    .intro{font-size:15px; line-height:1.9; color:var(--muted); margin:0 0 34px}
+    .links{display:grid; gap:14px}
+    .platform{
+      display:flex; align-items:center; gap:17px; min-height:100px;
+      background:var(--card); border:1px solid var(--line); border-radius:19px;
+      padding:21px 22px; text-decoration:none; color:inherit;
+      box-shadow:0 8px 28px rgba(31,48,73,.035);
+      transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+    }
+    .platform:hover,.platform:focus-visible{
+      transform:translateY(-3px); border-color:#bacbdc;
+      box-shadow:0 14px 32px rgba(31,48,73,.095);
+    }
+    .platform:focus-visible{outline:3px solid #6b97c3;outline-offset:3px}
+    .logo{
+      width:54px;height:54px;flex:none;border-radius:15px;
+      display:grid;place-items:center;font-weight:800;font-size:20px;
+      letter-spacing:-.04em;
+    }
+    .douyin .logo{background:#191a20;color:#fff}
+    .xiaohongshu .logo{background:#fff0f0;color:#d73341}
+    .details{display:flex;flex-direction:column;gap:5px;min-width:0;flex:1}
+    .platform-name{font-size:19px;font-weight:700}
+    .platform-desc{font-size:13px;color:var(--muted)}
+    .arrow{font-size:23px;color:#8491a0;line-height:1}
+    .footer{
+      margin-top:34px;padding-top:20px;border-top:1px solid var(--line);
+      font-size:12px;color:#8993a1;line-height:1.7;
+    }
+    @media(max-width:430px){
+      .platform{min-height:92px;padding:16px}
+      .logo{width:48px;height:48px;font-size:18px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      .platform{transition:none}
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">SOCIAL PORTFOLIO</p>
+    <h1>李洪鑫 · 个人社媒作品</h1>
+    <p class="intro">欢迎查看我的内容创作与品牌合作作品。<br>请选择下方平台，进入对应的个人主页。</p>
+
+    <nav class="links" aria-label="社交媒体主页">
+      <a class="platform douyin" href="https://v.douyin.com/jHKNBtcHcv8/" target="_blank" rel="noopener noreferrer" aria-label="打开李洪鑫的抖音主页（新窗口）">
+        <span class="logo" aria-hidden="true">抖音</span>
+        <span class="details">
+          <span class="platform-name">抖音</span>
+          <span class="platform-desc">查看短视频与内容作品</span>
+        </span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="platform xiaohongshu" href="https://xhslink.cn/o/79OdcT2CPfR" target="_blank" rel="noopener noreferrer" aria-label="打开李洪鑫的小红书主页（新窗口）">
+        <span class="logo" aria-hidden="true">小红书</span>
+        <span class="details">
+          <span class="platform-name">小红书</span>
+          <span class="platform-desc">查看图文与视频内容</span>
+        </span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
+
+    <p class="footer">本页面仅用于展示个人社交媒体作品。平台可能根据设备、浏览器或登录状态调整跳转方式。</p>
+  </main>
+</body>
+</html>
